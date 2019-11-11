@@ -28,6 +28,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="BlF-dV-Lmm"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="agR-jf-7q2"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -36,7 +37,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="Ijs-02-S5q" id="VbV-El-M2h"/>
-                        <segue destination="AOG-dq-jyc" kind="show" identifier="item" id="KVe-1x-uNa"/>
+                        <segue destination="AOG-dq-jyc" kind="presentation" identifier="item" id="KVe-1x-uNa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

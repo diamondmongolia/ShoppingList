@@ -17,7 +17,7 @@ class CustomTableViewCell: UITableViewCell {
     
 }
 
-class ViewController: UIViewController, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     let itemName = ["Apfel", "Banane", "Orange"]
     let itemCount = [4, 10, 3]
