@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B080B342376EFD500D6B53E /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B080B332376EFD500D6B53E /* CustomTableViewCell.xib */; };
 		5B9B8285237208BD0069C734 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B8284237208BD0069C734 /* AppDelegate.swift */; };
 		5B9B8287237208BD0069C734 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B8286237208BD0069C734 /* SceneDelegate.swift */; };
 		5B9B8289237208BD0069C734 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B8288237208BD0069C734 /* ViewController.swift */; };
@@ -15,6 +16,9 @@
 		5B9B8291237208CA0069C734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9B828F237208CA0069C734 /* LaunchScreen.storyboard */; };
 		5B9B829C237208CB0069C734 /* ShoppingListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B829B237208CB0069C734 /* ShoppingListTests.swift */; };
 		5B9B82A7237208CB0069C734 /* ShoppingListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B82A6237208CB0069C734 /* ShoppingListUITests.swift */; };
+		5BC9153323797F2E007DE5E5 /* apfel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5BC9153023797F2E007DE5E5 /* apfel.jpg */; };
+		5BC9153423797F2E007DE5E5 /* banane.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5BC9153123797F2E007DE5E5 /* banane.jpg */; };
+		5BC9153523797F2E007DE5E5 /* orange.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5BC9153223797F2E007DE5E5 /* orange.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B080B332376EFD500D6B53E /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		5B9B8281237208BD0069C734 /* ShoppingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B9B8284237208BD0069C734 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B9B8286237208BD0069C734 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +54,9 @@
 		5B9B82A2237208CB0069C734 /* ShoppingListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppingListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B9B82A6237208CB0069C734 /* ShoppingListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListUITests.swift; sourceTree = "<group>"; };
 		5B9B82A8237208CB0069C734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BC9153023797F2E007DE5E5 /* apfel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = apfel.jpg; sourceTree = "<group>"; };
+		5BC9153123797F2E007DE5E5 /* banane.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = banane.jpg; sourceTree = "<group>"; };
+		5BC9153223797F2E007DE5E5 /* orange.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = orange.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +112,12 @@
 				5B9B8288237208BD0069C734 /* ViewController.swift */,
 				5B9B828A237208BD0069C734 /* Main.storyboard */,
 				5B9B828D237208CA0069C734 /* Assets.xcassets */,
+				5BC9153023797F2E007DE5E5 /* apfel.jpg */,
+				5BC9153123797F2E007DE5E5 /* banane.jpg */,
+				5BC9153223797F2E007DE5E5 /* orange.jpeg */,
 				5B9B828F237208CA0069C734 /* LaunchScreen.storyboard */,
 				5B9B8292237208CA0069C734 /* Info.plist */,
+				5B080B332376EFD500D6B53E /* CustomTableViewCell.xib */,
 			);
 			path = ShoppingList;
 			sourceTree = "<group>";
@@ -232,8 +244,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BC9153423797F2E007DE5E5 /* banane.jpg in Resources */,
+				5BC9153323797F2E007DE5E5 /* apfel.jpg in Resources */,
 				5B9B8291237208CA0069C734 /* LaunchScreen.storyboard in Resources */,
 				5B9B828E237208CA0069C734 /* Assets.xcassets in Resources */,
+				5BC9153523797F2E007DE5E5 /* orange.jpeg in Resources */,
+				5B080B342376EFD500D6B53E /* CustomTableViewCell.xib in Resources */,
 				5B9B828C237208BD0069C734 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
