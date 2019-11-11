@@ -36,11 +36,53 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="Ijs-02-S5q" id="VbV-El-M2h"/>
+                        <segue destination="AOG-dq-jyc" kind="show" identifier="item" id="KVe-1x-uNa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="132" y="138.98050974512745"/>
+        </scene>
+        <!--Item View Controller-->
+        <scene sceneID="HJq-G0-bND">
+            <objects>
+                <viewController id="AOG-dq-jyc" customClass="ItemViewController" customModule="ShoppingList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7FV-jb-aGR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Ue-SD-vEh">
+                                <rect key="frame" x="16" y="162" width="343" height="343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Count: 5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Idj-9k-I9Z">
+                                <rect key="frame" x="16" y="513" width="343" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Banane" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKB-Sr-bYl">
+                                <rect key="frame" x="16" y="41" width="343" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="RHQ-zq-bSn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yzo-lx-Xmn"/>
+                    <connections>
+                        <outlet property="itemCount" destination="Idj-9k-I9Z" id="xkO-8x-fgW"/>
+                        <outlet property="itemImage" destination="6Ue-SD-vEh" id="IZd-wJ-jmj"/>
+                        <outlet property="itenName" destination="IKB-Sr-bYl" id="Ir3-el-uNM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HY6-bt-G06" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1036" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>

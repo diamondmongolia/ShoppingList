@@ -21,8 +21,10 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     let itemName = ["Apfel", "Banane", "Orange"]
     let itemCount = [4, 10, 3]
-    let itemImage = ["apfel.jpg", "banane.jpg", "orange.jpeg"]
-
+    let imageName = ["apfel.jpg", "banane.jpg", "orange.jpeg"]
+    
+    var selectedIndex = Int()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -30,7 +32,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         self.tableView.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "custom")
         
     }
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -42,8 +44,24 @@ class ViewController: UIViewController, UITableViewDataSource {
         
         cell.itemName.text = itemName[indexPath.row]
         cell.itemCount.text = "Count: \(itemCount[indexPath.row])"
-        cell.imageView?.image = UIImage(named:itemImage[indexPath.row])
+        cell.imageView?.image = UIImage(named:imageName[indexPath.row])
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.selectedIndex = indexPath.row
+        performSegue(withIdentifier: "item", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "item" {
+            let vc : ItemViewController = segue.destination as! ItemViewController
+            
+            vc.name = itemName[selectedIndex]
+            vc.count = itemCount[selectedIndex]
+            vc.image = imageName[selectedIndex]
+                        
+        }
     }
 }
