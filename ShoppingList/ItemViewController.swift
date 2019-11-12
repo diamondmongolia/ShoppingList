@@ -23,7 +23,7 @@ class ItemViewController: UIViewController {
         
         self.itenName.text = name
         self.itemImage.image = UIImage(named: image)
-        self.itemCount.text = "Count: \(count)"
+        self.itemCount.text = "Anzahl: \(count)"
 
         // Do any additional setup after loading the view.
     }
@@ -31,7 +31,12 @@ class ItemViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
+    
+    
+    @IBAction func returnBack(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

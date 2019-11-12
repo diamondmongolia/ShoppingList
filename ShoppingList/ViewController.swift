@@ -43,7 +43,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let cell : CustomTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "custom") as! CustomTableViewCell
         
         cell.itemName.text = itemName[indexPath.row]
-        cell.itemCount.text = "Count: \(itemCount[indexPath.row])"
+        cell.itemCount.text = "Anzahl: \(itemCount[indexPath.row])"
         cell.imageView?.image = UIImage(named:imageName[indexPath.row])
         
         return cell
